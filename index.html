@@ -1,84 +1,227 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Christian Woods</title>
+
+<title>Christian Woods | Unity AI Tools</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
 
-body{
-font-family:Arial;
-max-width:900px;
-margin:auto;
-padding:40px;
-background:#1d1d1d;
-color:white;
-line-height:1.6;
+*{
+    box-sizing:border-box;
 }
 
-img{
-max-width:100%;
-border-radius:10px;
-margin-top:15px;
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    max-width:1100px;
+    margin:auto;
+    padding:40px 25px;
+    background:#101014;
+    color:#eeeeee;
+    line-height:1.6;
 }
 
 h1{
-margin-bottom:0;
+    font-size:48px;
+    margin-bottom:5px;
+}
+
+h2{
+    color:#7bc7ff;
+}
+
+h3{
+    margin-bottom:5px;
+}
+
+.hero{
+    padding:50px 30px;
+    background:linear-gradient(135deg,#191922,#25253a);
+    border-radius:20px;
+    margin-bottom:40px;
+}
+
+.hero p{
+    font-size:20px;
+    color:#cccccc;
+}
+
+.button{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#7bc7ff;
+    color:#111;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
 }
 
 .card{
-background:#2a2a2a;
-padding:25px;
-border-radius:12px;
-margin-top:30px;
+    background:#1b1b22;
+    padding:30px;
+    border-radius:18px;
+    margin-top:30px;
+    border:1px solid #33333d;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.feature{
+    background:#24242d;
+    padding:20px;
+    border-radius:12px;
+}
+
+img{
+    width:100%;
+    border-radius:12px;
+    margin-top:15px;
+    border:1px solid #444;
+}
+
+.small{
+    color:#aaaaaa;
 }
 
 a{
-color:#7bc7ff;
+    color:#7bc7ff;
+}
+
+footer{
+    margin-top:50px;
+    text-align:center;
+    color:#777;
 }
 
 </style>
 
 </head>
 
+
 <body>
+
+
+<!-- HERO SECTION -->
+
+<div class="hero">
 
 <h1>Christian Woods</h1>
 
 <p>
-Unity Developer creating AI systems and editor tools.
+Unity Developer creating AI systems, editor tools, and gameplay technology.
 </p>
+
+<a class="button" href="https://github.com/YOURUSERNAME">
+GitHub
+</a>
+
+</div>
+
+
+
+<!-- PROJECT INTRO -->
 
 <div class="card">
 
 <h2>Simple AI Behavior Graph</h2>
 
 <p>
-
-Simple AI Behavior Graph is a visual behavior tree editor for Unity featuring:
-
+A powerful visual behavior tree framework for Unity designed to make complex AI easier to create, debug, and maintain.
 </p>
 
-<ul>
 
-<li>Visual graph editor</li>
+<div class="features">
 
-<li>Blackboard system</li>
 
-<li>Subsystem support</li>
-
-<li>Dynamic nodes</li>
-
-<li>Runtime debugging</li>
-
-</ul>
-
+<div class="feature">
+<h3>Visual Graph Editor</h3>
 <p>
-
-Designed to be intuitive for beginners while remaining powerful enough for complex AI.
-
+Create AI behaviors visually using a node-based workflow.
 </p>
+</div>
+
+
+<div class="feature">
+<h3>Blackboard System</h3>
+<p>
+Share information between behaviors with a flexible data system.
+</p>
+</div>
+
+
+<div class="feature">
+<h3>Runtime Debugging</h3>
+<p>
+Inspect AI decisions while your game is running.
+</p>
+</div>
+
+
+<div class="feature">
+<h3>Modular Architecture</h3>
+<p>
+Designed for expandable AI systems and custom behaviors.
+</p>
+</div>
+
 
 </div>
+
+</div>
+
+
+
+
+
+<!-- SCREENSHOTS -->
+
+<div class="card">
+
+<h2>Showcase</h2>
+
+
+<h3>AI Graph Editor</h3>
+
+<p class="small">
+Replace graph-editor.png with a screenshot of your main editor window.
+</p>
+
+<img src="graph-editor.png">
+
+
+
+<h3>Runtime Debugging</h3>
+
+<p class="small">
+Show your AI running inside Unity.
+</p>
+
+<img src="runtime-debug.png">
+
+
+
+<h3>Node System</h3>
+
+<p class="small">
+Show examples of your custom nodes/features.
+</p>
+
+<img src="node-system.png">
+
+
+</div>
+
+
+
+
+
+<!-- ABOUT -->
 
 <div class="card">
 
@@ -86,11 +229,49 @@ Designed to be intuitive for beginners while remaining powerful enough for compl
 
 <p>
 
-I'm an independent Unity developer focused on creating polished editor tools that improve workflow and reduce development time. I am currently a highschool student, working on my passion of programming.
+I'm an independent Unity developer focused on creating polished tools that improve development workflows.
+
+I enjoy building systems that make complicated gameplay technology easier for developers to use.
+
+Currently I am a high school student pursuing programming and game development.
 
 </p>
 
 </div>
+
+
+
+
+
+
+<!-- TECHNOLOGY -->
+
+<div class="card">
+
+<h2>Technology</h2>
+
+<ul>
+
+<li>Unity 6</li>
+
+<li>C#</li>
+
+<li>UI Toolkit</li>
+
+<li>Unity GraphView</li>
+
+<li>Custom Editor Tools</li>
+
+</ul>
+
+</div>
+
+
+
+
+
+
+<!-- CONTACT -->
 
 <div class="card">
 
@@ -99,11 +280,25 @@ I'm an independent Unity developer focused on creating polished editor tools tha
 <p>
 
 Email:
+<a href="mailto:christiandev32@gmail.com">
 christiandev32@gmail.com
+</a>
 
 </p>
 
+
 </div>
 
+
+
+
+<footer>
+
+© 2026 Christian Woods
+
+</footer>
+
+
 </body>
+
 </html>
